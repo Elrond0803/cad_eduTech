@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Active section highligting
         let current = '';
         const sections = document.querySelectorAll('section');
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const btn = contactForm.querySelector('button');
             const originalText = btn.innerText;
-            
+
             btn.innerText = 'Sending...';
             btn.style.backgroundColor = '#10b981'; // green color
-            
+
             setTimeout(() => {
                 contactForm.reset();
                 btn.innerText = 'Message Sent!';
-                
+
                 setTimeout(() => {
                     btn.innerText = originalText;
                     btn.style.backgroundColor = '';
@@ -70,22 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // This is the standard Watson Assistant Web Chat snippet.
     // The integrationID, region, and serviceInstanceID need to be replaced 
     // with the user's actual credentials from IBM Cloud to fully work.
-    
-    window.watsonAssistantChatOptions = {
-        // Placeholder values - need to be updated with real credentials
-        integrationID: "YOUR_INTEGRATION_ID_HERE", // The ID of this integration.
-        region: "us-south", // The region your integration is hosted in.
-        serviceInstanceID: "YOUR_SERVICE_INSTANCE_ID_HERE", // The ID of your service instance.
-        
-        onLoad: async (instance) => {
-            // Uncomment the following line to automatically render the web chat.
-            await instance.render();
-        }
-    };
 
-    setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-    }, 0);
 });
