@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech - Modern Learning Platform</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6a38f385-c585-42c3-96f7-7bf5b0ee4f4a", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "c646349e-2a94-43f8-b61c-9a7179ff11f6", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Edu<span class="highlight">Tech</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Potential with <br><span class="highlight">Modern Education</span></h1>
+            <p>Join thousands of learners worldwide. Access premium courses, expert instructors, and a thriving
+                community.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Students collaborating">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>Why Choose Us?</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-container"><i class="fas fa-laptop-code"></i></div>
+                <h3>Interactive Learning</h3>
+                <p>Engage with interactive modules designed to help you master concepts quickly and effectively.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-container"><i class="fas fa-user-tie"></i></div>
+                <h3>Expert Instructors</h3>
+                <p>Learn directly from industry professionals with years of real-world experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-container"><i class="fas fa-certificate"></i></div>
+                <h3>Verified Certificates</h3>
+                <p>Earn certificates that prove your skills to employers globally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="section-header">
+            <h2>Popular Courses</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Web Development">
+                <div class="course-info">
+                    <span class="badge">Technology</span>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Master modern web technologies including React, Node.js, and MongoDB.</p>
+                    <div class="course-footer">
+                        <span class="price">$99</span>
+                        <a href="#contact" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Data Science">
+                <div class="course-info">
+                    <span class="badge">Data</span>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Learn to analyze complex data sets and extract actionable insights using Python.</p>
+                    <div class="course-footer">
+                        <span class="price">$129</span>
+                        <a href="#contact" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="UI/UX Design">
+                <div class="course-info">
+                    <span class="badge">Design</span>
+                    <h3>UI/UX Design Principles</h3>
+                    <p>Create stunning, user-centric interfaces and experiences from scratch.</p>
+                    <div class="course-footer">
+                        <span class="price">$89</span>
+                        <a href="#contact" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <div class="underline"></div>
+            <p>Have questions? We're here to help.</p>
+        </div>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Edu<span>Tech</span></div>
+            <p>&copy; 2026 EduTech. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Integration Button -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
